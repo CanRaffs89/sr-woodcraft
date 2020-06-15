@@ -1,0 +1,145 @@
+:root {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
+.footer-menu {
+  background: #000;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  z-index: 5;
+}
+
+.footer-menu ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer-menu ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.footer-menu ul #hamburger {
+  height: 15px;
+  width: 20px;
+  margin-top: 3.5px;
+}
+
+.footer-menu ul #hamburger div {
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  margin-bottom: 4px;
+}
+
+.footer-menu ul #hamburger div.hidden-on-active {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-menu ul #phone {
+  height: 20px;
+  width: 20px;
+  background: url("../img/search_icon.svg");
+  background-size: cover;
+}
+
+.footer-menu ul #mail {
+  height: 18px;
+  width: 22px;
+  background: url("../img/basket_icon.svg");
+  background-size: cover;
+}
+
+@media (min-width: 1000px) {
+  .footer-menu {
+    height: 100%;
+    width: 50px;
+  }
+  .footer-menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 25%;
+    margin: 15px;
+  }
+}
+
+.side-menu {
+  height: calc(100% - 50px);
+  width: 220px;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 4;
+  left: -220px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.side-menu .side-menu-link {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0.9px;
+  width: 50%;
+  margin: 12px 0;
+  text-align: center;
+}
+
+.side-menu .side-menu-link:hover {
+  color: #000;
+}
+
+.side-menu-open {
+  left: 0px;
+}
+
+@media (min-width: 1000px) {
+  .side-menu {
+    height: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .side-menu .side-menu-link {
+    margin: 25px 0 15px 35px;
+  }
+}

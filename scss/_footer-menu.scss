@@ -1,0 +1,65 @@
+.footer-menu {
+    background: #000;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+
+    ul {
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+
+        li {
+            list-style: none;
+            cursor: pointer;
+        }
+    
+        #hamburger {
+            height: 15px;
+            width: 20px;
+            margin-top: 3.5px;
+
+            div {
+                width: 20px;
+                height: 2px;
+                background: #fff;
+                margin-bottom: 4px;
+
+                &.hidden-on-active {
+                    transform: scale(2);
+                    opacity: 0;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    
+        #phone {
+            height: 20px;
+            width: 20px;
+            background: url('../img/search_icon.svg');
+            background-size: cover;
+        }
+    
+        #mail {
+            height: 18px;
+            width: 22px;
+            background: url('../img/basket_icon.svg');
+            background-size: cover;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .footer-menu {
+        height: 100%;
+        width: 50px;
+
+        ul {
+            flex-direction: column;
+            height: 25%;
+            margin: 15px;
+        }
+    }
+}
