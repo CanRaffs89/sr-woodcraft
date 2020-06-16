@@ -1,6 +1,6 @@
 .side-menu {
     height: calc(100% - 50px);
-    width: 220px;
+    width: 250px;
     background: #000;
     display: flex;
     flex-direction: column;
@@ -8,14 +8,15 @@
     align-items: center;
     position: fixed;
     z-index: 4;
-    left: -220px;
+    left: -250px;
     transition: all 0.3s ease-in-out;
 
     .side-menu-link {
         color: #fff;
-        font-size: 20px;
-        letter-spacing: 0.9px;
-        width: 50%;
+        font-family: 'American Typewriter';
+        font-size: 1.5625rem;
+        letter-spacing: 3.5px;
+        max-width: 60%;
         margin: 12px 0;
         text-align: center;
 

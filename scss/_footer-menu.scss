@@ -10,6 +10,7 @@
         padding: 0;
         display: flex;
         justify-content: space-around;
+        align-items: center;
 
         li {
             list-style: none;
@@ -17,15 +18,15 @@
         }
     
         #hamburger {
-            height: 15px;
-            width: 20px;
+            height: 20px;
+            width: 25px;
             margin-top: 3.5px;
 
             div {
-                width: 20px;
+                width: 25px;
                 height: 2px;
                 background: #fff;
-                margin-bottom: 4px;
+                margin-bottom: 5px;
 
                 &.hidden-on-active {
                     transform: scale(2);
@@ -36,16 +37,16 @@
         }
     
         #phone {
-            height: 20px;
-            width: 20px;
-            background: url('../img/search_icon.svg');
+            height: 22px;
+            width: 15px;
+            background: url('../img/phone_icon.svg');
             background-size: cover;
         }
     
         #mail {
-            height: 18px;
-            width: 22px;
-            background: url('../img/basket_icon.svg');
+            height: 16px;
+            width: 25px;
+            background: url('../img/mail_icon.svg');
             background-size: cover;
         }
     }
@@ -58,8 +59,12 @@
 
         ul {
             flex-direction: column;
-            height: 25%;
-            margin: 15px;
+            height: 30%;
+
+            #phone {
+                opacity: 0;
+                cursor: default;
+            }
         }
     }
 }
