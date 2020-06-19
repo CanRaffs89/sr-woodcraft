@@ -4,6 +4,7 @@
 }
 
 body {
+    height: 100vh;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -18,6 +19,14 @@ a {
     width: 100%;
 }
 
+// Mixins 
+@mixin vertical-centre($position: relative) {
+    position: $position;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
 // Imports
 @import 'footer-menu';
 @import 'side-menu';
+@import 'home-page';

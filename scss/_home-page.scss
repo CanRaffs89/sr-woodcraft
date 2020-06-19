@@ -1,0 +1,57 @@
+.home-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+
+    #home-logo {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: url('../img/round_logo.png');
+        background-size: contain;
+    }
+
+    .left-section, .right-section {
+        height: 100%;
+        width: 50%;
+    }
+    
+    .left-section {
+        background: url('../img/home-left-image.JPG');
+        background-size: cover;
+        background-position: center;
+        border-right: 2px solid #fff;
+    }
+    
+    .right-section {
+        background: url('../img/home-right-image.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .home-container {
+        height: 100vh;
+        flex-direction: column;
+
+        #home-logo {
+            height: 150px;
+            width: 150px;
+        }
+
+        .left-section, .right-section {
+            height: 50%;
+            width: 100%;
+        }
+
+        .left-section {
+            border-bottom: 2px solid #fff;
+        }
+    }
+}
