@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="92px" viewBox="0 0 74 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>location_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="milling" transform="translate(-208.000000, -742.000000)">
+            <g id="location" transform="translate(145.000000, 713.000000)">
+                <g id="location_icon" transform="translate(63.000000, 29.000000)">
+                    <ellipse id="Oval" fill="#000000" cx="37" cy="35.5" rx="37" ry="35.5"></ellipse>
+                    <path d="M0.0209594844,37 C-0.285414737,43.1602788 2.76701849,51.0894053 9.17825918,60.7873795 C15.5894999,70.4853536 24.6570631,80.8895605 36.3809488,92 C48.5849155,80.7581193 57.6900845,70.6265431 63.6964557,61.6052712 C69.7028269,52.5839993 72.8040084,44.3822422 73,37 L0.0209594844,37 Z" id="Path-6" fill="#000000"></path>
+                    <ellipse id="Oval" fill="#F0F0F0" cx="37" cy="35.5" rx="12" ry="11.5"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
