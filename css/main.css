@@ -152,12 +152,13 @@ a {
             justify-content: flex-start;
   }
   .side-menu .side-menu-link {
-    margin: 25px 0 15px 35px;
+    margin: 25px 0 15px 50px;
   }
 }
 
 .home-container {
-  height: 100vh;
+  position: relative;
+  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,11 +176,59 @@ a {
   bottom: 0;
   background: url("../img/round_logo.png");
   background-size: contain;
+  z-index: 5;
 }
 
 .home-container .left-section, .home-container .right-section {
   height: 100%;
   width: 50%;
+}
+
+.home-container .section-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  height: 100%;
+  width: 50%;
+  position: absolute;
+}
+
+.home-container .section-text {
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+}
+
+.home-container .section-text h1 {
+  font-family: 'American Typewriter';
+  color: #F0F0F0;
+  font-weight: 400;
+  font-size: 3.875rem;
+  letter-spacing: 6px;
+  text-align: center;
+  z-index: 4;
+}
+
+.home-container .section-text a {
+  height: 70px;
+  width: 70px;
+  display: inherit;
+  margin: 0 auto;
+  z-index: 4;
+}
+
+.home-container .section-text a img {
+  height: 70px;
+  width: 70px;
 }
 
 .home-container .left-section {
@@ -197,21 +246,53 @@ a {
 
 @media (max-width: 1000px) {
   .home-container {
-    height: 100vh;
+    height: 550px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .home-container #home-logo {
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
   }
   .home-container .left-section, .home-container .right-section {
     height: 50%;
     width: 100%;
   }
+  .home-container .left-section h1, .home-container .right-section h1 {
+    font-size: 2rem;
+  }
+  .home-container .section-overlay {
+    width: 100%;
+    height: inherit;
+  }
+  .home-container .section-text {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home-container .section-text h1 {
+    margin-left: 50px;
+  }
+  .home-container .section-text a {
+    height: 40px;
+    width: 40px;
+    margin: 0 20px;
+  }
+  .home-container .section-text a img {
+    height: 40px;
+    width: 40px;
+  }
   .home-container .left-section {
     border-bottom: 2px solid #fff;
+    border-right: none;
   }
 }

@@ -1,5 +1,6 @@
 .home-container {
-    height: 100vh;
+    position: relative;
+    height: 100%;
     width: 100%;
     display: flex;
 
@@ -14,11 +15,52 @@
         bottom: 0;
         background: url('../img/round_logo.png');
         background-size: contain;
+        z-index: 5;
     }
 
     .left-section, .right-section {
         height: 100%;
         width: 50%;
+    }
+
+    .section-overlay {
+        background: rgba(0, 0, 0, 0.55);
+        height: 100%;
+        width: 50%;
+        position: absolute;
+    }
+
+    .section-text {
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        @include vertical-centre;
+
+        h1 {
+            font-family: 'American Typewriter';
+            color: #F0F0F0;
+            font-weight: 400;
+            font-size: 3.875rem;
+            letter-spacing: 6px;
+            text-align: center;
+            z-index: 4;
+        }
+
+        a {
+            height: 70px;
+            width: 70px;
+            display: inherit;
+            margin: 0 auto;
+            z-index: 4;
+
+            img {
+                height: 70px;
+                width: 70px;
+                
+            }
+        }
     }
     
     .left-section {
@@ -37,21 +79,52 @@
 
 @media (max-width: 1000px) {
     .home-container {
-        height: 100vh;
+        height: 550px;
         flex-direction: column;
 
         #home-logo {
-            height: 150px;
-            width: 150px;
+            height: 120px;
+            width: 120px;
         }
 
         .left-section, .right-section {
             height: 50%;
             width: 100%;
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        .section-overlay {
+            width: 100%;
+            height: inherit;
+        }
+
+        .section-text {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                margin-left: 50px;
+            }
+
+            a {
+                height: 40px;
+                width: 40px;
+                margin: 0 20px;
+
+                img {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
         }
 
         .left-section {
             border-bottom: 2px solid #fff;
+            border-right: none;
         }
     }
 }
