@@ -7,7 +7,7 @@
     justify-content: flex-end;
     align-items: center;
     position: fixed;
-    z-index: 4;
+    z-index: 5;
     left: -250px;
     transition: all 0.3s ease-in-out;
 
@@ -21,7 +21,7 @@
         text-align: center;
 
         &:hover {
-            color: #000;
+            color: #222;
         }
     }
 }
