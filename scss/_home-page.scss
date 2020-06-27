@@ -54,6 +54,7 @@
             display: inherit;
             margin: 0 auto;
             z-index: 4;
+            cursor: pointer;
 
             img {
                 height: 70px;
@@ -79,7 +80,7 @@
 
 @media (max-width: 1000px) {
     .home-container {
-        height: 550px;
+        height: 600px;
         flex-direction: column;
 
         #home-logo {

@@ -3,8 +3,8 @@
   scroll-behavior: smooth;
 }
 
-body {
-  height: 100vh;
+html, body {
+  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -224,6 +224,7 @@ a {
   display: inherit;
   margin: 0 auto;
   z-index: 4;
+  cursor: pointer;
 }
 
 .home-container .section-text a img {
@@ -246,7 +247,7 @@ a {
 
 @media (max-width: 1000px) {
   .home-container {
-    height: 550px;
+    height: 600px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -305,6 +306,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   background: #F0F0F0;
+  overflow: hidden;
 }
 
 .milling-container p {
@@ -392,14 +394,49 @@ a {
   width: 60%;
 }
 
+.milling-container .gallery {
+  overflow: auto;
+}
+
+.milling-container .gallery .gallery-container {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.milling-container .gallery .gallery-container li {
+  list-style: none;
+  height: 40vh;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 1px;
+}
+
+.milling-container .gallery .gallery-container li img {
+  max-height: 100%;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: bottom;
+}
+
 @media (max-width: 1000px) {
   .milling-container {
+    height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .milling-container .info-section, .milling-container .gallery {
+    height: 100%;
     width: 100%;
   }
   .milling-container .info-text {
@@ -424,11 +461,29 @@ a {
     letter-spacing: 3.5px;
   }
   .milling-container .info-bullets {
-    width: 100%;
-    height: auto;
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+  }
+  .milling-container .info-bullets .info-bullet-item {
     margin: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .milling-container .info-bullets .info-bullet-item img {
-    width: 74px;
+    width: 20%;
+    margin: 0 5% 0 0;
+  }
+  .milling-container .info-bullets .info-bullet-item #location-icon {
+    height: 40px;
+  }
+  .milling-container .info-bullets .info-bullet-item p {
+    width: 75%;
+    font-size: 0.9rem;
+    letter-spacing: 1.8px;
   }
 }
