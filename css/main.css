@@ -177,6 +177,7 @@ a {
   background: url("../img/round_logo.png");
   background-size: contain;
   z-index: 4;
+  cursor: pointer;
 }
 
 .home-container .left-section, .home-container .right-section {
@@ -247,7 +248,7 @@ a {
 
 @media (max-width: 1000px) {
   .home-container {
-    height: 600px;
+    min-height: 500px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -485,5 +486,9 @@ a {
     width: 75%;
     font-size: 0.9rem;
     letter-spacing: 1.8px;
+  }
+  .gallery {
+    padding-bottom: 50px;
+    /*Padding to move bottom above mobile menu bar*/
   }
 }

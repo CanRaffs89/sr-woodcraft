@@ -16,6 +16,7 @@
         background: url('../img/round_logo.png');
         background-size: contain;
         z-index: 4;
+        cursor: pointer;
     }
 
     .left-section, .right-section {
@@ -80,7 +81,7 @@
 
 @media (max-width: 1000px) {
     .home-container {
-        height: 600px;
+        min-height: 500px;
         flex-direction: column;
 
         #home-logo {
