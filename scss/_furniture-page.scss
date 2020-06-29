@@ -1,0 +1,170 @@
+.furniture-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: $off-white;
+    overflow: hidden;
+
+    p {
+        font-family: Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 400;
+    }
+
+    .furniture-info-section, .furniture-gallery {
+        height: 94%;
+        width: 50%;
+        margin: 3% 0;
+    }
+
+    .furniture-info-section {
+        border-right: 2px solid #000;
+
+        .furniture-info-text {
+            width: 80%;
+            margin: 0 50px 0 100px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #000;
+    
+            .furniture-heading {
+                display: flex;
+    
+                a {
+                    height: 40px;
+                    width: 40px;
+    
+                    img {
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+    
+                h1 {
+                    font-family: 'American Typewriter';
+                    font-weight: 400;
+                    font-size: 1.875rem;
+                    letter-spacing: 4px;
+                    margin: 0 0 0 20px;
+                }
+            }
+    
+            #furniture-etsy-link {
+                margin: 0 20px 0 0;
+            }
+    
+            p {
+                font-size: 1.125rem;
+                letter-spacing: 4px;
+            }
+        }
+    
+        .featured-gallery {
+            width: 80%;
+            margin: 3% auto;
+            
+            .featured-gallery-container {
+                width: 90%;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 auto;
+                padding: 0;
+                overflow: hidden;
+        
+                li {
+                    list-style: none;
+                    height: 40vh;
+                    flex-grow: 1;
+                    margin: 1px;
+        
+                    img {
+                        max-height: 100%;
+                        min-width: 100%;
+                        object-fit: cover;
+                        vertical-align: bottom;
+                    }
+                }
+            }
+        }
+    }
+
+    .furniture-gallery {
+        overflow: auto;
+
+        .furniture-gallery-container {
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            padding: 0;
+            overflow: hidden;
+    
+            li {
+                list-style: none;
+                height: 40vh;
+                flex-grow: 1;
+                margin: 1px;
+    
+                img {
+                    max-height: 100%;
+                    min-width: 100%;
+                    object-fit: cover;
+                    vertical-align: bottom;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .furniture-container {
+        height: auto;
+        flex-direction: column;
+
+        .furniture-info-section, .furniture-gallery {
+            height: 100%;
+            width: 100%;
+        }
+
+        .furniture-info-section {
+
+            .furniture-info-text {
+                height: auto;
+                margin: 10px auto;
+
+                .furniture-heading {
+                    a {
+                        height: 30px;
+                        width: 30px;
+        
+                        img {
+                            height: 30px;
+                            width: 30px;
+                        }
+                    }
+
+                    h1 {
+                        font-size: 1.375rem;
+                        letter-spacing: 4px;
+                        margin: 0 0 0 20px;
+                    }
+                }
+
+                p {
+                    font-size: 1rem;
+                    letter-spacing: 3.5px;
+                }
+            }
+
+            .featured-gallery {
+                width: 80%;
+                height: 50%;
+                margin: 0 auto;
+                padding-bottom: 25px;
+            }
+        }
+    }
+
+    .furniture-gallery {
+        padding-bottom: 50px; /*Padding to move bottom above mobile menu bar*/
+    }
+}

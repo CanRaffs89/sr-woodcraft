@@ -11,6 +11,10 @@
     left: -250px;
     transition: all 0.3s ease-in-out;
 
+    :last-of-type {
+        padding-bottom: 20px;
+    }
+
     .side-menu-link {
         color: $off-white;
         font-family: 'American Typewriter';
