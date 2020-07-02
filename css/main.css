@@ -675,3 +675,81 @@ a {
     /*Padding to move bottom above mobile menu bar*/
   }
 }
+
+.contact-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #F0F0F0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-container p, .contact-container .contact-link {
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+}
+
+.contact-container .contact-section {
+  height: 100%;
+  width: 50%;
+  margin: 3% 0;
+}
+
+.contact-container .contact-section .contact-text {
+  width: 80%;
+  height: 100%;
+  margin: 0 50px 0 100px;
+  padding-bottom: 10px;
+}
+
+.contact-container .contact-section .contact-text .contact-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-container .contact-section .contact-text .contact-heading a {
+  height: 40px;
+  width: 40px;
+}
+
+.contact-container .contact-section .contact-text .contact-heading a img {
+  height: 40px;
+  width: 40px;
+}
+
+.contact-container .contact-section .contact-text .contact-heading h1 {
+  font-family: 'American Typewriter';
+  font-weight: 400;
+  font-size: 1.875rem;
+  letter-spacing: 4px;
+  margin: 0 0 0 20px;
+}
+
+.contact-container .contact-section .contact-text #contact-phone-icon {
+  height: 22px;
+  width: 15px;
+}
+
+.contact-container .contact-section .contact-text #contact-mail-icon {
+  height: 16px;
+  width: 25px;
+}
+
+.contact-container .contact-section .contact-text #contact-globe-icon {
+  height: 23px;
+  width: 22px;
+}
+
+.contact-container .contact-section .contact-text .contact-link {
+  text-decoration: none;
+  font-size: 1.125rem;
+  letter-spacing: 2.5px;
+}
+
+.contact-container .contact-section .contact-text p {
+  font-size: 1.125rem;
+  letter-spacing: 4px;
+}
