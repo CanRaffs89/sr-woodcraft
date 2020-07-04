@@ -702,6 +702,13 @@ a {
   height: 100%;
   margin: 0 50px 0 100px;
   padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contact-container .contact-section .contact-text .contact-heading {
@@ -743,13 +750,64 @@ a {
   width: 22px;
 }
 
-.contact-container .contact-section .contact-text .contact-link {
+.contact-container .contact-section .contact-text .contact-link-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+.contact-container .contact-section .contact-text .contact-link-item .contact-link {
+  margin-left: 10px;
   text-decoration: none;
   font-size: 1.125rem;
   letter-spacing: 2.5px;
+  color: #555;
+}
+
+.contact-container .contact-section .contact-text .contact-link-item .contact-link:hover {
+  color: #999;
 }
 
 .contact-container .contact-section .contact-text p {
   font-size: 1.125rem;
   letter-spacing: 4px;
+}
+
+@media (max-width: 1000px) {
+  .contact-container {
+    height: 100%;
+  }
+  .contact-container .contact-section {
+    height: 100%;
+    width: 100%;
+  }
+  .contact-container .contact-section .contact-text {
+    height: auto;
+    margin: 10px auto;
+  }
+  .contact-container .contact-section .contact-text .contact-heading a {
+    height: 30px;
+    width: 30px;
+  }
+  .contact-container .contact-section .contact-text .contact-heading a img {
+    height: 30px;
+    width: 30px;
+  }
+  .contact-container .contact-section .contact-text .contact-heading h1 {
+    font-size: 1.375rem;
+    letter-spacing: 4px;
+    margin: 0 0 0 20px;
+  }
+  .contact-container .contact-section .contact-text .contact-link-item .contact-link {
+    font-size: 1rem;
+    letter-spacing: 3.5px;
+  }
+  .contact-container .contact-section .contact-text p {
+    font-size: 1rem;
+    letter-spacing: 3.5px;
+  }
 }

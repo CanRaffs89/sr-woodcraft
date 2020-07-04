@@ -20,6 +20,8 @@
             height: 100%;
             margin: 0 50px 0 100px;
             padding-bottom: 10px;
+            display: flex;
+            flex-direction: column;
     
             .contact-heading {
                 display: flex;
@@ -58,15 +60,73 @@
                 width: 22px;
             }
 
-            .contact-link {
-                text-decoration: none;
-                font-size: 1.125rem;
-                letter-spacing: 2.5px;
+            .contact-link-item {
+                display: flex;
+                align-items: center;
+                margin: 10px 0;
+
+                .contact-link {
+                    margin-left: 10px;
+                    text-decoration: none;
+                    font-size: 1.125rem;
+                    letter-spacing: 2.5px;
+                    color: #555;
+    
+                    &:hover {
+                        color: #999;
+                    }
+                }
             }
     
             p {
                 font-size: 1.125rem;
                 letter-spacing: 4px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .contact-container {
+        height: 100%;
+
+        .contact-section {
+            height: 100%;
+            width: 100%;
+
+            .contact-text {
+                height: auto;
+                margin: 10px auto;
+
+                .contact-heading {
+                    a {
+                        height: 30px;
+                        width: 30px;
+        
+                        img {
+                            height: 30px;
+                            width: 30px;
+                        }
+                    }
+    
+                    h1 {
+                        font-size: 1.375rem;
+                        letter-spacing: 4px;
+                        margin: 0 0 0 20px;
+                    }
+                }
+
+                .contact-link-item {
+                    .contact-link {
+                        font-size: 1rem;
+                        letter-spacing: 3.5px;
+                    }
+                }
+
+                p {
+                    font-size: 1rem;
+                    letter-spacing: 3.5px;
+                }
             }
         }
     }
