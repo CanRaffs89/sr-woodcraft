@@ -12,21 +12,20 @@
     }
 
     .info-section, .gallery {
-        height: 94%;
         width: 50%;
         margin: 3% 0;
     }
 
     .info-section {
         border-right: 2px solid #000;
+        overflow: auto;
+        padding-right: 20px;
     }
 
     .info-text {
         width: 80%;
-        height: 45%;
         margin: 0 50px 0 100px;
         padding-bottom: 10px;
-        border-bottom: 2px solid #000;
 
         .heading {
             display: flex;
@@ -65,17 +64,16 @@
 
         .info-bullet-item {
             display: flex;
-            justify-content: space-between;
-            margin: 15px 0;
+            align-items: center;
 
             img {
-                margin: 0 auto;
+                margin-right: 20px;
+                height: 40px;
             }
 
             p {
                 font-size: 1.0625rem;
                 letter-spacing: 2px;
-                width: 60%;
             }
         }
     }
@@ -160,10 +158,6 @@
                 img {
                     width: 20%;
                     margin: 0 5% 0 0;
-                }
-
-                #location-icon {
-                    height: 40px;
                 }
 
                 p {
