@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive&display=swap");
 :root {
   font-size: 16px;
   scroll-behavior: smooth;
@@ -102,8 +103,8 @@ a {
 }
 .side-menu .side-menu-link {
   color: #F0F0F0;
-  font-family: "American Typewriter";
-  font-size: 1.5625rem;
+  font-family: "Cutive";
+  font-size: 1.5rem;
   letter-spacing: 3.5px;
   max-width: 60%;
   margin: 12px 0;
@@ -167,7 +168,7 @@ a {
   transform: translatey(-50%);
 }
 .home-container .section-text h1 {
-  font-family: "American Typewriter";
+  font-family: "Cutive";
   color: #F0F0F0;
   font-weight: 400;
   font-size: 3.875rem;
@@ -279,11 +280,12 @@ a {
   width: 40px;
 }
 .milling-container .info-text .heading h1 {
-  font-family: "American Typewriter";
+  font-family: "Cutive";
   font-weight: 400;
-  font-size: 1.875rem;
+  font-size: 1.8rem;
   letter-spacing: 4px;
   margin: 0 0 0 20px;
+  align-self: center;
 }
 .milling-container .info-text p {
   font-size: 1.125rem;
@@ -426,11 +428,12 @@ a {
   width: 40px;
 }
 .furniture-container .furniture-info-section .furniture-info-text .furniture-heading h1 {
-  font-family: "American Typewriter";
+  font-family: "Cutive";
   font-weight: 400;
-  font-size: 1.875rem;
+  font-size: 1.8rem;
   letter-spacing: 4px;
   margin: 0 0 0 20px;
+  align-self: center;
 }
 .furniture-container .furniture-info-section .furniture-info-text #furniture-etsy-link {
   margin: 0 20px 0 0;
@@ -565,11 +568,12 @@ a {
   width: 40px;
 }
 .contact-container .contact-section .contact-text .contact-heading h1 {
-  font-family: "American Typewriter";
+  font-family: "Cutive";
   font-weight: 400;
-  font-size: 1.875rem;
+  font-size: 1.8rem;
   letter-spacing: 4px;
   margin: 0 0 0 20px;
+  align-self: center;
 }
 .contact-container .contact-section .contact-text #contact-phone-icon {
   height: 22px;
